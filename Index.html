@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!-- Inserted by miarroba -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-T2VG59');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7294310421616689" crossorigin="anonymous"></script>
+<!-- Inserted by miarroba -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta Satisfacción del Cliente (Hotel Stars)</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-size: 100% 100%;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra para destacar el formulario */
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff; /* Color de texto blanco */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+        }
+
+        .question {
+            margin-bottom: 20px;
+            color: #000; /* Color de texto negro */
+            background-color: #fff; /* Fondo blanco */
+            padding: 15px; /* Espaciado interno para las preguntas */
+            border-radius: 10px; /* Bordes redondeados */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 18px; /* Tamaño de la fuente de las preguntas */
+            font-weight: bold; /* Texto en negrita */
+        }
+
+        select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"], button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+
+        input[type="submit"]:hover, button:hover {
+            background-color: #0056b3;
+        }
+
+        #mensaje {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+            color: blue; /* Letras azules */
+            font-size: 24px;
+            font-style: italic; /* Letra cursiva */
+            background-color: #ffffff; /* Fondo blanco */
+            padding: 20px;
+            border-radius: 5px;
+            border: 1px solid blue; /* Borde azul */
+        }
+
+        #regresar {
+            display: none;
+        }
+
+        /* Imágenes de fondo */
+        .fondo-encuesta {
+            background-image: url('hotel.jpeg'); 
+        }
+
+        .fondo-estadisticas {
+            background-image: url('imgf.jpeg'); 
+        }
+
+        .grafica-container {
+            margin-bottom: 20px;
+            background-color: #fff; /* Fondo blanco para las gráficas */
+            padding: 20px; /* Espaciado interno para las gráficas */
+            border-radius: 10px; /* Bordes redondeados */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra para destacar las gráficas */
+        }
+    </style>
+</head>
+<body class="fondo-encuesta">
+<!-- Inserted by miarroba -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2VG59" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- Inserted by miarroba -->
+    <div class="container" id="encuesta">
+        <h1>¡Ayudanos a mejorar!
+        Comparte tu opinion en nuestra encuesta de satisfaccion</h1>
+        <form action="#" method="post" onsubmit="return validarEncuesta();">
+            <div class="question">
+                <label for="pregunta1">1. ¿Que calificacion le darias a la limpieza de las habitaciones?</label>
+                <select name="pregunta1" id="pregunta1">
+                    <option value="">Selecciona una opción</option>
+                    <option value="excelente">Excelente</option>
+                    <option value="bien">Bien</option>
+                    <option value="regular">Regular</option>
+                    <option value="mal">Mal</option>
+                    <option value="muy_malo">Muy Malo</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="pregunta2">2. ¿Como calificarias la privacidad?</label>
+                <select name="pregunta2" id="pregunta2">
+                    <option value="">Selecciona una opción</option>
+                    <option value="excelente">Excelente</option>
+                    <option value="bien">Bien</option>
+                    <option value="regular">Regular</option>
+                    <option value="mal">Mal</option>
+                    <option value="muy_malo">Muy Malo</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="pregunta3">3. ¿Que calificacion le das al desayuno?</label>
+                <select name="pregunta3" id="pregunta3">
+                    <option value="">Selecciona una opción</option>
+                    <option value="excelente">Excelente</option>
+                    <option value="bien">Bien</option>
+                    <option value="regular">Regular</option>
+                    <option value="mal">Mal</option>
+                    <option value="muy_malo">Muy Malo</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="pregunta4">4. ¿Que calificacion le das a la ubicacion del hotel?</label>
+                <select name="pregunta4" id="pregunta4">
+                    <option value="">Selecciona una opción</option>
+                    <option value="excelente">Excelente</option>
+                    <option value="bien">Bien</option>
+                    <option value="regular">Regular</option>
+                    <option value="mal">Mal</option>
+                    <option value="muy_malo">Muy Malo</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="pregunta5">5. ¿Que calificacion le das al servicio personal?</label>
+                <select name="pregunta5" id="pregunta5">
+                    <option value="">Selecciona una opción</option>
+                    <option value="excelente">Excelente</option>
+                    <option value="bien">Bien</option><option value="regular">Regular</option>
+<option value="mal">Mal</option>
+<option value="muy_malo">Muy Malo</option>
+</select>
+</div>
+<input type="submit" id="enviar" value="Enviar">
+</form>
+</div>
+<div id="mensaje" class="alert alert-success container" role="alert">
+¡Gracias por tu opinion!
+</div>
+
+<div id="regresar" class="container">
+<button class="btn btn-primary" onclick="mostrarPreguntas()"><h3>REGRESAR</h></button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+let respuestas = [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]];
+
+// Función para crear y mostrar las estadísticas para una pregunta específica
+function mostrarEstadisticas(preguntaIndex) {
+    let ctx = document.getElementById(`miGrafica${preguntaIndex}`).getContext('2d');
+    let tipoGrafica;
+
+    // Asignar un tipo de gráfica diferente según el índice de pregunta
+    switch(preguntaIndex) {
+        case 0:
+            tipoGrafica = 'bar'; // Gráfica de barras
+            break;
+        case 1:
+            tipoGrafica = 'pie'; // Gráfica de pastel
+            break;
+        case 2:
+            tipoGrafica = 'radar'; // Gráfica radar
+            break;
+        case 3:
+            tipoGrafica = 'line'; // Gráfica de líneas
+            break;
+        case 4:
+            tipoGrafica = 'polarArea'; // Gráfica de área polar
+            break;
+        default:
+            tipoGrafica = 'bar'; // Por defecto, gráfica de barras
+    }
+
+    new Chart(ctx, {
+        type: tipoGrafica,
+        data: {
+            labels: ['Excelente', 'Bien', 'Regular', 'Mal', 'Muy Malo'],
+            datasets: [{
+                label: `Pregunta ${preguntaIndex + 1}`,
+                backgroundColor: ["#007bff", "#28a745", "#ffc107", "#dc3545", "#343a40"],
+                borderColor: "black",
+                borderWidth: 1,
+                data: respuestas[preguntaIndex]
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true,
+                        fontSize: 16, // Tamaño de la fuente del eje Y
+                        fontColor: 'black' // Color de la fuente del eje Y
+                    }
+                }],
+                xAxes: [{
+                    ticks: {
+                        fontSize: 16, // Tamaño de la fuente del eje X
+                        fontColor: 'black' // Color de la fuente del eje X
+                    }
+                }]
+            }
+        }
+    });
+}
+
+// Función para mostrar las preguntas
+function mostrarPreguntas() {
+    let encuestaDiv = document.getElementById('encuesta');
+    let mensajeDiv = document.getElementById('mensaje');
+    let regresarDiv = document.getElementById('regresar');
+
+    // Ocultar preguntas y mensaje de éxito
+    encuestaDiv.style.display = "block";
+    mensajeDiv.style.display = "none";
+    regresarDiv.style.display = "none";
+
+    // Eliminar las gráficas de las estadísticas
+    let graficaContainers = document.querySelectorAll('.grafica-container');
+    graficaContainers.forEach(container => {
+        container.remove();
+    });
+
+    document.body.className = "fondo-encuesta";
+}
+
+// Función para mostrar las estadísticas y cambiar el fondo
+function mostrarEstadisticasYFondo() {
+    let encuestaDiv = document.getElementById('encuesta');
+    let mensajeDiv = document.getElementById('mensaje');
+    let regresarDiv = document.getElementById('regresar');
+
+    encuestaDiv.style.display = "none";
+    mensajeDiv.style.display = "block";
+    regresarDiv.style.display = "block";
+    document.body.className = "fondo-estadisticas";
+
+    // Mostrar las estadísticas para cada pregunta
+    respuestas.forEach((pregunta, index) => {
+        let graficaContainer = document.createElement('div');
+        graficaContainer.classList.add('grafica-container');
+        graficaContainer.id = `gra${index + 1}`;
+
+        let canvas = document.createElement('canvas');
+        canvas.id = `miGrafica${index}`;
+        canvas.width = 400;
+        canvas.height = 300;
+
+        graficaContainer.appendChild(canvas);
+        document.body.appendChild(graficaContainer);
+
+        mostrarEstadisticas(index);
+    });
+}
+
+// Función para validar la encuesta y actualizar las respuestas
+function validarEncuesta() {
+    let selects = document.querySelectorAll('select');
+    let todasRespondidas = true;
+
+    selects.forEach((select, index) => {
+        if (select.selectedIndex === 0) {
+            todasRespondidas = false;
+        } else {
+            // Actualizar el arreglo de respuestas para la pregunta index
+            let selectedIndex = select.selectedIndex;
+            respuestas[index][selectedIndex - 1]++;
+        }
+    });
+
+    if (!todasRespondidas) {
+        // Alerta si no todas las preguntas han sido respondidas
+        if (!document.querySelector('.alert.alert-danger')) {
+            let alertaHtml = `
+                <div class="alert alert-danger" role="alert">
+                    Por favor, responde todas las preguntas antes de enviar.
+                </div>
+            `;
+            document.body.insertAdjacentHTML('afterbegin', alertaHtml);
+        }
+        return false;
+    } else {
+        // Eliminar la alerta si todas las preguntas han sido respondidas
+        let alertaExistente = document.querySelector('.alert.alert-danger');
+        if (alertaExistente) {
+            alertaExistente.remove();
+        }
+    }
+
+    // Ocultar preguntas y mostrar mensaje de éxito con estadísticas
+    mostrarEstadisticasYFondo();
+    return false;
+}
+</script>
+<!-- Inserted by miarroba -->
+</script></noframes></noembed></noscript><script type="text/javascript" src="https://hosting.miarroba.info/?__muid=&amp;h=2168859&amp;t=1715649154&amp;k=df1ee92646b445804fab56025ac6b5e0"></script><noscript><img alt="beacon" border="0" width="1" height="1" src="https://hosting.miarroba.info/?__muid=&amp;h=2168859&amp;t=1715649154&amp;k=df1ee92646b445804fab56025ac6b5e0&amp;img=1" /></noscript>
+<!-- Inserted by miarroba -->
+</body>
+</html>
